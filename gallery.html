@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="contycoon.css">
+  <title>Convention Tycoon: Gallery</title>
+  <meta name="keywords" content="Convention Tycoon, gallery, video game art, video game concept art, concept art, artist alley, dog eating cheese">
+  <meta name="author" content="Sleepy Sheepy (Madison Micklas)">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+  <header>
+    <img class="banner" src="assets/banner2.png">
+    
+    <ul class="nav">
+      <li class="nav"><a href="index.html">Home</a></li>
+      <li class="nav"><a class="thispage" href="gallery.html">Gallery</a></li>
+      <li class="nav"><a href="news.html">News</a></li>
+      <li class="nav"><a href="contact.html">Feedback & Contact</a></li>
+      <li class="nav"><a href="technicalsupport.html">Technical Support</a></li>
+    </ul>
+    
+  </header>
+ 
+  <main>
+  
+    <br>
+    
+    <article>
+
+      <h1>Image Gallery</h1>
+      <p class="centertext">Click on an image to see a bigger version.</p>
+    
+      <div class="flex-container">
+      <img class="img1" src="assets/screenshot_artist_alley.png" alt="Artist Alley" onclick="myFunction(this);">  
+        <img class="img1" src="assets/screenshot_animal_show.png" alt="So skilled!!" onclick="myFunction(this);">     
+        <img class="img1" src="assets/eyesore_arcade.png" alt="The eyesore arcade" onclick="myFunction(this);">
+        <img class="img1" src="assets/screenshot_character_customization.png" alt="CHOOSE YOUR FIGHTER"  onclick="myFunction(this);">
+        <img class="img1" src="assets/scenery_vaporwave_and_buns.png" alt="a e s t h e t i c"  onclick="myFunction(this);">
+        <img class="img1" src="assets/screenshot_ballpit.png" alt="You can have an extra hour in the ball pit"  onclick="myFunction(this);">  
+      </div>
+      <br>
+      
+      <div class="container">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+        <img id="expandedImg" style="width:100%">
+        <div id="imgtext"></div>
+      </div>
+      
+      <script>
+        function myFunction(imgs) {
+            var expandImg = document.getElementById("expandedImg");
+            var imgText = document.getElementById("imgtext");
+            expandImg.src = imgs.src;
+            imgText.innerHTML = imgs.alt;
+            expandImg.parentElement.style.display = "block";
+        }
+      </script>
+    
+    </article>
+    
+    <br>
+    
+    <article>
+      
+      <h1>Videos From Around the Web</h1>
+      
+      <p>Here are some videos from <a href="http://www.youtube.com">YouTube.com</a>.</p>
+    
+      <h2>"5 Tips for Selling at Your First Artist Alley"</h2>
+      
+      <div class="row">
+        <div class="column">
+          <p>The Artist Alley is an essential part of any anime convention! If you're interested in selling some art of your own at a convention, it helps to go in with some advice.</p>
+          <br>
+        </div>
+        <div class="column">
+          <p>Try watching this video by Jennifer Charlee Art to find out how to prepare yourself for a smooth Artist Alley experience.</p>
+        </div>
+      </div>
+      
+      <!--
+      <p>The Artist Alley is an essential part of any anime convention! If you're interested in selling some art of your own at a convention, it helps to go in with some advice. Try watching this video by Jennifer Charlee Art to find out how to prepare yourself for a smooth Artist Alley experience.</p>
+      <br>
+      -->
+      
+      
+      <iframe src="https://www.youtube.com/embed/5tBg3rpUw3M"></iframe>
+      <br><br>
+      
+      <h2>"Dog eating cheese like a maniac"</h2> 
+
+      <p>At conventions, sometimes people eat food. And this dog is eating food. Overall, this video is very, very good, so it was important to include it here.</h2><br><br>
+      <iframe src="https://www.youtube.com/embed/Bs0f7dyNBx0"></iframe>
+      <br>
+      
+    </article>
+    
+    <br><br>
+    
+  </main> 
+  <footer>
+    <p class="footertext">© Madison Micklas 2018</p>
+  </footer> 
+</body>
+</html> 
