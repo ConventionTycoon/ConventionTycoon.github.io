@@ -124,21 +124,29 @@
   ul.nav {
     /*width: 85%;
     max-width: 1000px;*/
+    /*
     margin-left: auto;
     margin-right: auto;
     list-style-type: none;
+    */
     padding: 0;
     overflow: hidden;
     background-color: #c67070;
     border-left: 6px solid #913b3b;
     border-right: 6px solid #913b3b;
     border-radius: 10px;
-    text-align: justify;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     
   }
 
   li.nav {
-      float: left;
+    float: center;
+    display:inline-block;
+    margin:0;
+    padding:0;
   }
 
   li a {
