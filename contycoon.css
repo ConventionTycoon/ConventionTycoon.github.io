@@ -5,8 +5,8 @@
   header{
     }
   main{
-    padding-right: 20px;
-    padding-left: 20px;
+    /*padding-right: 20px;
+    padding-left: 20px;*/
     }
   footer{
     width: 85%;
@@ -29,7 +29,7 @@
     color: black;
   }
   article {
-    width: 85%;
+    width: 95%;
     max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
@@ -108,6 +108,9 @@
   hr {
     border-top: 3px dotted #f8aa9c;
     width: 95%;
+    height: 1px;
+    margin-left: auto;
+    margin-right: auto;
   }
   
 
@@ -258,6 +261,10 @@
     color: black;
     background-color: #ECF8EF;
   }
+  td.notsupported {
+    color: gray;
+    background-color: #ECF8EF;
+  }
   .devices caption {
     color: black;
     font-style: italic;
@@ -326,7 +333,7 @@
   }
 
   .active:after {
-    content: "2212";
+    content: "\2212";
   }
 
   .content {
@@ -350,18 +357,17 @@
     justify-content: center;
     }
   
-  
   .img1:hover {
       opacity: 0.8; 
       cursor: pointer; 
   }
 
   .container {
-      position: relative;
-      display: none;
-      margin-left: auto;
-      margin-right: auto;
-      max-width: 750px;
+    position: relative;
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 750px;
   }
 
   #imgtext {
@@ -371,6 +377,19 @@
       color: white;
       font-size: 20px;
   }
+  
+  #imgtext2 {
+    display: inline;
+    background-color: rgba(0,0,0,.85);
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: white;
+    font-size: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+ 
 
   .closebtn {
       position: absolute;
@@ -401,22 +420,31 @@
     display: table;
     clear: both;
   }
-    
   
+    
+  /* Header */
   
   .headercontainer {
-  position: relative;
-  text-align: center;
-  color: white;
-}
+    position: relative;
 
+  }
 
-.headercentered {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
+  .headercentered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: Impact, Haettenschweiler, Franklin Gothic Bold, Charcoal, Helvetica Inserat, Bitstream Vera Sans Bold, Arial Black, sans serif;
+    color: white;
+    font-size: 40px;
+    font-style: italic;
+    text-shadow:
+    -3px -3px 0 #000,
+    3px -3px 0 #000,
+    -3px 3px 0 #000,
+    3px 3px 0 #000; 
+  }
   
 
   

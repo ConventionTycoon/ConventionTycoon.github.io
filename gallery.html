@@ -11,7 +11,7 @@
 
 <body>
   <header>
-    <img class="banner" src="assets/banner2.png">
+    <img class="banner" alt="Convention Tycoon" src="assets/banner3.png">
     
     <ul class="nav">
       <li class="nav"><a href="index.html">Home</a></li>
@@ -31,9 +31,15 @@
 
       <h1>Image Gallery</h1>
       <p class="centertext">Click on an image to see a bigger version.</p>
+      
+      <div class="container">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+        <img id="expandedImg" style="width:100%">
+        <div id="imgtext2"></div>
+      </div>
     
       <div class="flex-container">
-      <img class="img1" src="assets/screenshot_artist_alley.png" alt="Artist Alley" onclick="myFunction(this);">  
+      <img class="img1" src="assets/screenshot_artist_alley.png" alt="Is this a girls-only convention...?" onclick="myFunction(this);">  
         <img class="img1" src="assets/screenshot_animal_show.png" alt="So skilled!!" onclick="myFunction(this);">     
         <img class="img1" src="assets/eyesore_arcade.png" alt="The eyesore arcade" onclick="myFunction(this);">
         <img class="img1" src="assets/screenshot_character_customization.png" alt="CHOOSE YOUR FIGHTER"  onclick="myFunction(this);">
@@ -42,16 +48,12 @@
       </div>
       <br>
       
-      <div class="container">
-        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-        <img id="expandedImg" style="width:100%">
-        <div id="imgtext"></div>
-      </div>
+      
       
       <script>
         function myFunction(imgs) {
             var expandImg = document.getElementById("expandedImg");
-            var imgText = document.getElementById("imgtext");
+            var imgText = document.getElementById("imgtext2");
             expandImg.src = imgs.src;
             imgText.innerHTML = imgs.alt;
             expandImg.parentElement.style.display = "block";
@@ -60,7 +62,7 @@
     
     </article>
     
-    <br>
+    <br><br>
     
     <article>
       
