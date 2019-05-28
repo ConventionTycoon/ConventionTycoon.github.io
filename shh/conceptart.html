@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="contycoon.css">
+  <title>Convention Tycoon: Gallery</title>
+  <meta name="keywords" content="Convention Tycoon, gallery, video game art, video game concept art, concept art, artist alley, dog eating cheese">
+  <meta name="author" content="Sleepy Sheepy (Madison Micklas)">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+  <header>
+    <img class="banner" alt="Convention Tycoon" src="assets/banner3.png">
+    
+  </header>
+ 
+  <main>
+  
+    <br>
+    
+    <article>
+
+      <h1>Concept art~</h1>
+      <p class="centertext">Click on an image to see a bigger version.</p>
+      
+      <div class="container">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+        <img id="expandedImg" style="width:100%">
+        <div id="imgtext2"></div>
+      </div>
+    
+      <div class="flex-container">
+      <img class="img1" src="assets/screenshot_artist_alley.png" alt="Is this a girls-only convention...?" onclick="myFunction(this);">  
+        <img class="img1" src="assets/screenshot_animal_show.png" alt="An animal talent show. So skilled!!" onclick="myFunction(this);">     
+        <img class="img1" src="assets/screenshot_character_customization.png" alt="CHOOSE YOUR FIGHTER"  onclick="myFunction(this);">
+        <img class="img1" src="assets/stingularity.png" alt="Now featuring characters from the game Stingularity by Jconst!"  onclick="myFunction(this);"> 
+        <img class="img1" src="assets/screenshot_ballpit.png" alt="Try not to disappoint your guests"  onclick="myFunction(this);">  
+      </div>
+      <br>
+      
+ 
+      <script>
+        function myFunction(imgs) {
+            var expandImg = document.getElementById("expandedImg");
+            var imgText = document.getElementById("imgtext2");
+            expandImg.src = imgs.src;
+            imgText.innerHTML = imgs.alt;
+            expandImg.parentElement.style.display = "block";
+        }
+      </script>
+    
+    </article>
+    
+    <br><br>
+    
+  
+  </main> 
+  <footer>
+    <p class="footertext">© Madison Micklas 2019</p>
+  </footer> 
+</body>
+</html> 

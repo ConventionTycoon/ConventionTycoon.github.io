@@ -300,8 +300,8 @@
   /* Video */
   
  iframe {
-    width: 540px;
-    height: 360px;
+    /* width: 540px;
+    height: 360px; */
     padding: 20px;
     background-image: linear-gradient(white, #ECF8EF);
     border: 3px solid #F8AA9C;
@@ -309,6 +309,29 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .formiframe {
+    width: 95%;
+    max-width: 800px;
+    
+    /* padding: 20px;
+    background-image: linear-gradient(white, #ECF8EF);
+    border: 3px solid #F8AA9C;
+    border-radius: 25px; */
+
+    /* position: relative; */
+    height: auto;
+    min-height: 700px;
+
+   /*  min-height: 100%; */
+    /* height: 1000px; */
+
+    /* display: block;
+    overflow: scroll;
+    height: 100%; */
+    /* margin-left: auto;
+    margin-right: auto; */
   }
   
   /* Collapsibles */
@@ -326,6 +349,7 @@
     outline: none;
     font-size: 15px;
     border-radius: 10px;
+    
   }
 
   .active, .collapsible:hover {
@@ -386,7 +410,7 @@
       font-size: 20px;
   }
   
-  #imgtext2 {
+  .imgtext2 {
     display: inline;
     background-color: rgba(0,0,0,.85);
     position: absolute;
