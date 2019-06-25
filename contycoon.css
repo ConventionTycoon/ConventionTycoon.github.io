@@ -1,3 +1,14 @@
+@font-face {
+  font-family: Poppins;
+  /* src: url('fonts/Poppins/Poppins-Regular.eot'); */
+  src: /* url('fonts/EntezareZohoor2.eot?') format('☺'),
+       url('fonts/EntezareZohoor2.woff') format('woff'), */
+       local('Poppins-Regular'), url('fonts/Poppins/Poppins-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
   html{
     min-height:100%;
     /*background: linear-gradient(to top, #c85490, #ffff99) fixed;*/}
@@ -23,8 +34,8 @@
     box-shadow: 0px 5px 15px #888888;
     }
   body{
-    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-    font-size: 14px;
+    font-family: Poppins, "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-size: 16px;
     background-color: #ECF8EF;
     color: black;
   }
@@ -41,13 +52,13 @@
   .darkicle {
     background-color: #c67070;
   }
-   
+
   h1{
-    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-family: Poppins, "Lucida Sans Unicode", "Lucida Grande", sans-serif;
     font-size: 24px;
     text-align: center;}
   h2{
-    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-family: Poppins, "Lucida Sans Unicode", "Lucida Grande", sans-serif;
     font-size: 20px;
     color: #black;
     padding-left:10px;
@@ -57,11 +68,11 @@
     border-right: 6px solid #f8aa9c;
     border-radius: 10px;}
   h3{
-    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-family: Poppins, "Lucida Sans Unicode", "Lucida Grande", sans-serif;
     font-size: 16px;
     color: #5b2525;}
   h4{
-    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-family: Poppins, "Lucida Sans Unicode", "Lucida Grande", sans-serif;
     background-color: white;
     padding-left:10px;
     border-left: 6px solid pink;
@@ -70,7 +81,7 @@
   }
   
   p{
-    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-family: Poppins, "Lucida Sans Unicode", "Lucida Grande", sans-serif;
     color: black;
     }
     
@@ -194,9 +205,9 @@
   /* Images */
   
   .img1 {
-      height: 100px;
-      width: auto;
-      padding: 5px;}
+    height: 100px;
+    width: auto;
+    padding: 5px;}
   
   .img2 {
     max-width: 85%;
@@ -290,6 +301,18 @@
     /* min-width: 800px; */
   }
 
+  .progress-table leftcolumn {
+    /* width: 20%; */
+  }
+
+  .progress-table rightcolumn {
+    /* width: 80%; */
+  }
+
+  .progress-table .songsheader {
+    padding: 10px;
+  }
+
   .progress-table .songbox {
     padding-left: 30px;
     padding-right: 30px;
@@ -297,24 +320,30 @@
     padding-bottom: 25px;
   }
 
-  .progress-table .songsheader {
-    padding: 10px;
-  }
+
 
   .progress-table .artistimg {
-    width: 20%;
+    /* width: 20%; */
+    padding-top: 30px;
     padding-left: 30px;
   }
 
   .progress-table .artistname {
-    width: 25%;
+    /* width: 25%; */
+    padding-top: 30px;
     padding-left: 30px;
-    text-align: center;
+    padding-bottom: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    /* padding: 20px; */
+    /* text-align: center; */
   }
   
   .progress-table .desc {
+    /* padding-top: 30px; */
     padding-left: 30px;
-    padding-right: 30px;
+    padding-bottom: 15px;
+    /* font-style: italic; */
     /* width: 60%; */
   }
 
@@ -324,8 +353,7 @@
   
   .progress-table .table-head .artistimg,
     .progress-table .table-head .artistname,
-    .progress-table .table-head .desc,
-    .progress-table .table-head .percentage {
+    .progress-table .table-head .desc {
     color: #222222;
     line-height: 40px;
     text-transform: uppercase;
@@ -340,8 +368,7 @@
   
   .progress-table .table-row .artistimg,
     .progress-table .table-row .artistname,
-    .progress-table .table-row .desc,
-    .progress-table .table-row .percentage {
+    .progress-table .table-row .desc {
     display: flex;
     align-items: center;
   }
@@ -403,6 +430,7 @@
   /* Collapsibles */
   
   .collapsible {
+    font-family: Poppins, "Lucida Sans Unicode", "Lucida Grande", sans-serif;
     background-color: #c67070;
     color: white;
     cursor: pointer;
@@ -444,7 +472,10 @@
   }
 
   .song {
+    font-family: Poppins, "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+
     /* background-color: lightgray; */
+    
     background: rgb(186,186,186);
     background: linear-gradient(90deg, rgba(186,186,186,1) 0%, rgba(228,228,228,1) 57%, rgba(236,236,236,1) 100%);
     color: black;
@@ -456,7 +487,7 @@
     border-right: 6px solid #913b3b; */
     text-align: left;
     outline: none;
-    font-size: 15px;
+    font-size: 14px;
     border-radius: 5px;
     margin: 1px;
   }
@@ -555,7 +586,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    font-family: Impact, Haettenschweiler, Franklin Gothic Bold, Charcoal, Helvetica Inserat, Bitstream Vera Sans Bold, Arial Black, sans serif;
+    font-family: Poppins, Impact, Haettenschweiler, Franklin Gothic Bold, Charcoal, Helvetica Inserat, Bitstream Vera Sans Bold, Arial Black, sans serif;
     color: white;
     font-size: 40px;
     font-style: italic;
