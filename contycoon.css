@@ -218,6 +218,10 @@
     margin-right: auto; 
   }
 
+  .img3 {
+    height: 200px;
+  }
+
   .banner {
     width: 100%;
     height: auto;
@@ -320,8 +324,6 @@
     padding-bottom: 25px;
   }
 
-
-
   .progress-table .artistimg {
     /* width: 20%; */
     padding-top: 30px;
@@ -371,6 +373,13 @@
     .progress-table .table-row .desc {
     display: flex;
     align-items: center;
+  }
+
+  .progress-table .imgbox {
+    padding-left: 30px;
+    padding-right: 30px;
+    /* padding-top: 10px; */
+    padding-bottom: 25px;
   }
 
   
