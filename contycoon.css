@@ -280,6 +280,72 @@
     background-color: white;
     padding: 10px;
   }
+
+
+  /* Rename this, but here is progress-table, which is currently used for featured artists: */
+
+  .progress-table {
+    background: #fff;
+    padding: 15px 0px 30px 0px;
+    /* min-width: 800px; */
+  }
+
+  .progress-table .songbox {
+    padding-left: 30px;
+    padding-right: 30px;
+    /* padding-top: 10px; */
+    padding-bottom: 25px;
+  }
+
+  .progress-table .songsheader {
+    padding: 10px;
+  }
+
+  .progress-table .artistimg {
+    width: 20%;
+    padding-left: 30px;
+  }
+
+  .progress-table .artistname {
+    width: 25%;
+    padding-left: 30px;
+    text-align: center;
+  }
+  
+  .progress-table .desc {
+    padding-left: 30px;
+    padding-right: 30px;
+    /* width: 60%; */
+  }
+
+  .progress-table .table-head {
+    display: flex;
+  }
+  
+  .progress-table .table-head .artistimg,
+    .progress-table .table-head .artistname,
+    .progress-table .table-head .desc,
+    .progress-table .table-head .percentage {
+    color: #222222;
+    line-height: 40px;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+  
+  .progress-table .table-row {
+    padding: 15px 0px 0px;
+    border-top: 1px solid #edf3fd;
+    display: flex;
+  }
+  
+  .progress-table .table-row .artistimg,
+    .progress-table .table-row .artistname,
+    .progress-table .table-row .desc,
+    .progress-table .table-row .percentage {
+    display: flex;
+    align-items: center;
+  }
+
   
   /* Figure */
 
@@ -378,7 +444,9 @@
   }
 
   .song {
-    background-color: lightgray;
+    /* background-color: lightgray; */
+    background: rgb(186,186,186);
+    background: linear-gradient(90deg, rgba(186,186,186,1) 0%, rgba(228,228,228,1) 57%, rgba(236,236,236,1) 100%);
     color: black;
     cursor: pointer;
     padding: 10px;
@@ -394,6 +462,7 @@
   }
   .active, .song:hover {
     background-color: white;
+    background: linear-gradient(90deg, rgba(214,214,214,1) 0%, rgba(255,255,255,1) 20%);
   }
 
 
