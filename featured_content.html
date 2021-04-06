@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-   <link rel="stylesheet" href="contycoon.css">
+  <link rel="stylesheet" href="contycoon.css">
   <title>Convention Tycoon: Featured Content</title>
   <meta name="keywords" content="Convention Tycoon, news, game news, indie developer, Stingularity, Jconst, My Girlfriend Is a Computer Virus, KanoVirus, school uniform, art">
-  <meta name="author" content="Sleepy Sheepy (Madison Micklas)">
+  <meta name="author" content="Deepseabunnies (Madison Micklas)">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  
+  <script src="navbar.js"></script>
 </head>
 
 <body>
@@ -17,49 +16,29 @@
       <img class="banner" title="Convention Tycoon" src="assets/banner3.png">
     </a>
     
-    <ul class="nav">
-      <li class="nav"><a href="index.html">Home</a></li>
-      <li class="nav"><a href="gallery.html">Gallery</a></li>
-      
-      <li class="nav"><a href="contact.html">Feedback & Contact</a></li>
-      <li class="nav"><a href="technicalsupport.html">Technical Support</a></li>
-      <li class="nav"><a href="music.html">Musicians wanted!</a></li>
-    </ul>
+    <nav id="navbarjs"></nav>
+    <script>document.getElementById('navbarjs').innerHTML = html;</script>
     
   </header>
   
   <main>
     
-    
-    <!-- A template for your convenience
-    
-    <tr>
-        <td rowspan="___">Month</td>
-        <td>___Date___</td>
-        <td>___News___</td>
-      </tr>
-      <tr>
-        <td>___Date___</td>
-        <td>___News___</td>
-      </tr>
-    
-    -->
     <br>
-
+    
+    <article>
+      <i><p>Info out of date? Please report broken or links or outdated information to <a href="mailto:conventiontycoon@gmail.com">conventiontycoon@gmail.com</a>!</p></i>
+    </article>
+    <br><br>
 
     <article>
         <h2 class="mb-30">Musicians</h2>
 
-        <i><p>Info out of date? Please report broken or links or outdated information to <a href="mailto:conventiontycoon@gmail.com">conventiontycoon@gmail.com</a>!</p></i>
-      <!-- <div class="progress-table-wrap"> -->
         <div class="progress-table">
          <!--  <div class="table-head">
             <div class="artistimg">Image</div>
             <div class="artistname">Artist</div>
             <div class="desc">About</div>
           </div> -->
-
-
 
           <div class="table-row">
             <div class="leftcolumn">
@@ -75,19 +54,19 @@
               </div>
 
               <div class="desc">
-                Jconst is a really cool dude who is great at things and stuff. Most of all he is super cute.
-                <br><br>
-                Note: Currently, the songs are only stretching all the way across their designated spaces because this description is long enough to make that happen.
+                Jconst is a really cool dude who is great at things and stuff.
+                <!-- <br><br>
+                Note: Currently, the songs are only stretching all the way across their designated spaces because this description is long enough to make that happen. -->
               </div>
 
               <div class="songbox">
                 <div class="songsheader">Songs:</div>
                 <button class="song" onclick="window.location.href='https://soundcloud.com/joseph-constan/glowsticks';">Glowsticks (Electronic)</button>
-                <button class="song" onclick="window.location.href='https://soundcloud.com/joseph-constan/glowsticks';">Glowsticks (Electronic)  (the same thing but another button)</button>
+                <!-- <button class="song" onclick="window.location.href='https://soundcloud.com/joseph-constan/glowsticks';">Glowsticks (Electronic)  (the same thing but another button)</button>
                 <button class="song" onclick="window.location.href='https://soundcloud.com/joseph-constan/glowsticks';">Glowsticks (Electronic)</button>
                 <button class="song" onclick="window.location.href='https://soundcloud.com/joseph-constan/glowsticks';">Glowsticks (Electronic)</button>
                 <button class="song" onclick="window.location.href='https://soundcloud.com/joseph-constan/glowsticks';">Glowsticks (Electronic)</button>
-                <button class="song" onclick="window.location.href='https://soundcloud.com/joseph-constan/glowsticks';">Glowsticks (Electronic)</button>
+                <button class="song" onclick="window.location.href='https://soundcloud.com/joseph-constan/glowsticks';">Glowsticks (Electronic)</button> -->
               </div>
             </div>
           </div>
@@ -95,7 +74,7 @@
 
 
 
-          <div class="table-row">
+          <!-- <div class="table-row">
               <div class="leftcolumn">
                 <div class="artistimg"><a href="_"><img src="assets/artists/a_bunbun.png" title="_" width=150px></a></div>
               </div>
@@ -110,18 +89,17 @@
                   
                 </div>
               </div>
-            </div>
+            </div> -->
           
 
         </div>
       <!-- </div> -->
     </article>
-    
     <br><br>
 
     <article>
 
-      <h2>Featured...other content????</h2>
+      <h2>Crossovers</h2>
 
       <div class="progress-table">
 
@@ -135,12 +113,12 @@
                 <div class="desc">Game by Jconst<br>
                  Originally created by Jconst and some others
                  <br><br>
-                  Ees good game
+                  A nifty arcade-style game about bees!
                 </div>
   
                 <div class="songbox">
                   <div class="songsheader">Links:</div>
-                  <button class="song" onclick="window.location.href='_';">Info abt game</button>
+                  <button class="song" onclick="window.location.href='https://youtu.be/bMk_aIaOYb4';">Promo video</button>
                   
                 </div>
 
@@ -164,13 +142,8 @@
                  <div class="desc">Project by Josh Briell<br>
                   Originally created by Josh Briell, Deepseabunnies, Burgundy 'Burgundy' Burgundy, and Jeff Cheng
                   <br><br>
-                  Mad Galaxy is love. Mad Galaxy is life. 
-                 </div>
-   
-                 <div class="songbox">
-                   <div class="songsheader">Links:</div>
-                   <button class="song" onclick="window.location.href='_';">Let's get some links to Josh's galleries in here ayy</button>
-                   
+                  A multimedia sci-fi romp!
+                  <br><br>
                  </div>
                </div>
              </div>
@@ -182,14 +155,12 @@
     
                 <div class="rightcolumn">
                   <div class="artistname">★ Evil Puppets Inc (EPI) ★</div>
-                  <div class="desc">Comic and animation by Josh Briell<br>
-                    Ye boi
+                  <div class="desc">Comic and animation by Josh Briell
                   </div>
     
                   <div class="songbox">
                     <div class="songsheader">Links:</div>
-                    <button class="song" onclick="window.location.href='_';">Let's get some links to Josh's galleries in here ayy</button>
-                    
+                    <button class="song" onclick="window.location.href='https://www.artstation.com/joshbriell';">Josh Briell on ArtStation</button>
                   </div>
 
                   <div class="desc">Gallery:
@@ -212,7 +183,7 @@
   </main>
   
   <footer>
-    <p class="footertext">© Madison Micklas 2019</p>
+    <p class="footertext">© Madison Micklas 2021</p>
   </footer>
   
 </body>

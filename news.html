@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-   <link rel="stylesheet" href="contycoon.css">
+  <link rel="stylesheet" href="contycoon.css">
   <title>Convention Tycoon: News</title>
   <meta name="keywords" content="Convention Tycoon, news, game news, indie developer, Stingularity, Jconst, My Girlfriend Is a Computer Virus, KanoVirus, school uniform, art">
   <meta name="author" content="Sleepy Sheepy (Madison Micklas)">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  
+  <script src="navbar.js"></script>
 </head>
 
 <body>
@@ -17,13 +16,8 @@
       <img class="banner" alt="Convention Tycoon" src="assets/banner3.png">
     </a>
     
-    <ul class="nav">
-      <li class="nav"><a href="index.html">Home</a></li>
-      <li class="nav"><a href="gallery.html">Gallery</a></li>
-      <li class="nav"><a class="thispage" href="news.html">News</a></li>
-      <li class="nav"><a href="contact.html">Feedback & Contact</a></li>
-      <li class="nav"><a href="technicalsupport.html">Technical Support</a></li>
-    </ul>
+    <nav id="navbarjs"></nav>
+    <script>document.getElementById('navbarjs').innerHTML = html;</script>
     
   </header>
   

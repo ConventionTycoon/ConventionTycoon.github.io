@@ -6,6 +6,7 @@
   <meta name="keywords" content="Convention Tycoon, feedback, contact, game features, indie developer">
   <meta name="author" content="Sleepy Sheepy (Madison Micklas)">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <script src="navbar.js"></script>
 </head>
 
 <body>
@@ -15,14 +16,8 @@
       <img class="banner" alt="Convention Tycoon" src="assets/banner3.png">
     </a>
     
-    <ul class="nav">
-      <li class="nav"><a href="index.html">Home</a></li>
-      <li class="nav"><a href="gallery.html">Gallery</a></li>
-      <!-- <li class="nav"><a href="news.html">News</a></li> -->
-      <li class="nav"><a class="thispage" href="contact.html">Feedback & Contact</a></li>
-      <li class="nav"><a href="technicalsupport.html">Technical Support</a></li>
-      <li class="nav"><a href="music.html">Musicians wanted!</a></li>
-    </ul>
+    <nav id="navbarjs"></nav>
+    <script>document.getElementById('navbarjs').innerHTML = html;</script>
     
   </header>
   
@@ -62,6 +57,14 @@
         <p>I would love to! Please read the info on <a href="music.html">this page</a>, and then email <a href="mailto:conventiontycoon@gmail.com">conventiontycoon@gmail.com</a>!</p>
         <br>
       </div>
+
+      <button class="collapsible">Control scheme survey</button>
+      <div class="content">
+        <br>
+        <p>Make your voice heard through our survey <a href="https://forms.gle/mu5FTiA4m7CoGee68">here</a>!</p>
+        <p>I plan to keep accessibility in mind, but there are a lot of things I don't even realize are issues, so your feedback is very valuable.</p>
+        <br>
+      </div>
       
       
       <br>
@@ -80,7 +83,7 @@
   <br><br>
   
   <footer>
-    <p class="footertext">© Madison Micklas 2019</p>
+    <p class="footertext">© Madison Micklas 2021</p>
   </footer>
   
   
